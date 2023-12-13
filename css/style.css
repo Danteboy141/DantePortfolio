@@ -85,6 +85,8 @@ main {
   opacity: 0; /* Begin met de paragrafen verborgen */
   animation-fill-mode: both; /* Behoudt de animatiestaat na voltooiing */
   border-right: 2px solid transparent; /* Voegt een knipperende cursor toe */
+  overflow-wrap: break-word;
+
 }
 
 .write:nth-child(1) {
@@ -195,11 +197,11 @@ footer {
 }
 
 /* Pinkgoose pagina */
-.pinkgoosehoofd{
+.pinkgoosehoofd {
   display: flex;
   flex-direction: row;
 }
-.pinkgooseblok{
+.pinkgooseblok {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,33 +211,46 @@ footer {
   padding: 60px;
   border-radius: 20px;
 }
-#pinkgoose:hover{
+#pinkgoose:hover {
   transform: scale(1.2);
 }
 
-#namaken {
+#tekstbox {
   width: 25vw;
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 50px;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 0 7px 0.2px #00d4ff;
   margin-left: 50px;
   margin-right: 50px;
 }
-#pinkwebsite{
+#pinkwebsite {
   width: 30vw;
   border-radius: 15px;
   margin-top: 180px;
 }
-
-#pinkwebsite2{
+#pinkwebsite2 {
   display: none;
 }
-.pinkwebsite2{
+.pinkwebsite2 {
   display: none;
 }
 
+/* project week style */
+.projectweekblok {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#team {
+  width: 30vw;
+  border-radius: 15px;
+  margin: 0 15px 0 15px;
+
+}
 
 
 @media screen and (max-width: 600px) {
@@ -309,25 +324,32 @@ footer {
     white-space: normal;
     min-width: 410px;
   }
-  #namaken {
+  #tekstbox {
     width: 67vw;
   }
-  .pinkgoosehoofd{
+  .pinkgoosehoofd {
     display: flex;
     flex-direction: column;
   }
-  #pinkwebsite{
+  #pinkwebsite {
     width: 60vw;
     margin-top: 30px;
   }
-  .pinkwebsite2{
+  .pinkwebsite2 {
     display: block;
   }
-  .pinkwebsite1{
+  .pinkwebsite1 {
     display: none;
   }
-  
-  
+
+  #team {
+    width: 67vw;
+  }
+  .projectweekblok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @keyframes typing {
   from {
