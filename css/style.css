@@ -1,0 +1,347 @@
+/* Algemeen */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  transition: all 0.25s;
+}
+
+body {
+  background-color: #00323b;
+  font-family: "Hedvig Letters Serif", serif;
+}
+
+a {
+  color: #62f6ff;
+}
+span {
+  font-weight: 700;
+  text-decoration: underline;
+}
+p {
+  color: #62f6ff;
+  font-size: 20px;
+}
+
+#blauw {
+  color: #62f6ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Algemeen */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  border-bottom: 10px solid #00b7db;
+}
+
+.dante {
+  padding: 20px 0px 0px 20px;
+  color: #62f6ff;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 190px;
+}
+
+nav .dropdown {
+  display: none;
+}
+li {
+  display: flex;
+  gap: 125px;
+  color: white;
+}
+li ul {
+  padding: 10px 10px 10px 10px;
+  color: white;
+}
+ul:hover {
+  background-color: grey;
+  border-radius: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0 30px 0;
+  flex-direction: column;
+}
+
+.write {
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-in-out forwards,
+    typing 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  white-space: nowrap;
+  opacity: 0; /* Begin met de paragrafen verborgen */
+  animation-fill-mode: both; /* Behoudt de animatiestaat na voltooiing */
+  border-right: 2px solid transparent; /* Voegt een knipperende cursor toe */
+}
+
+.write:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.write:nth-child(2) {
+  animation-delay: 2s; /* Vertraging voor de tweede paragraaf */
+}
+
+.projecten {
+  align-items: center;
+  display: flex;
+  padding-top: 30px;
+  gap: 45px;
+  padding-bottom: 20vh;
+}
+.projecten div:hover {
+  transform: scale(1.2);
+}
+#project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  text-align: center;
+  justify-items: center;
+}
+#projecten-grid P {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#persoon {
+  display: flex;
+  justify-content: center;
+}
+#persoon img {
+  width: 30%;
+  border-radius: 100%;
+}
+.introductie {
+  margin-top: 40px;
+  padding: 15px;
+  box-shadow: 0 0 7px 0.2px #00d4ff;
+  border-radius: 10px;
+  background-color: #005161;
+  overflow-wrap: break-word;
+  width: 100%;
+}
+#goose {
+  border-radius: 10px;
+  align-self: center;
+  background-color: black;
+  grid-area: 1 / 1 / 2 / 2;
+}
+#goose img {
+  padding: 60px 10px 60px 10px;
+}
+.pinktekst {
+  grid-area: 2 / 1 / 3 / 2;
+  width: 15vw;
+  text-decoration: none;
+}
+.projecttekst {
+  grid-area: 1 / 2 / 2 / 3;
+  width: 15vw;
+}
+.mastermindtekst {
+  width: 15vw;
+}
+#project {
+  grid-area: 2 / 2 / 3 / 3;
+}
+#project img {
+  width: 280px;
+  border-radius: 10px;
+}
+#mastermind {
+  grid-area: 1 / 3 / 2 / 4;
+}
+#mastermind img {
+  width: 240px;
+  border-radius: 10px;
+}
+
+/* Product */
+
+.skills {
+  width: auto;
+}
+.border-skills {
+  border: 2px solid #006793;
+}
+footer {
+  height: 100px;
+  border-top: 10px solid #00b2ff;
+}
+.social {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+.social img {
+  width: 38px;
+}
+
+/* Pinkgoose pagina */
+.pinkgoosehoofd{
+  display: flex;
+  flex-direction: row;
+}
+.pinkgooseblok{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#pinkgoose {
+  background-color: black;
+  padding: 60px;
+  border-radius: 20px;
+}
+#pinkgoose:hover{
+  transform: scale(1.2);
+}
+
+#namaken {
+  width: 25vw;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 7px 0.2px #00d4ff;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#pinkwebsite{
+  width: 30vw;
+  border-radius: 15px;
+  margin-top: 180px;
+}
+
+#pinkwebsite2{
+  display: none;
+}
+.pinkwebsite2{
+  display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  li {
+    display: none;
+  }
+  .projecten {
+    display: flex;
+    flex-direction: column;
+  }
+  nav .dropdown {
+    display: block;
+    margin-right: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .dropbtn {
+    background-color: #00b2ff;
+    padding: 14px;
+    width: 85px;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+
+    margin-top: 10px;
+  }
+  .dropbtn:hover,
+  .dropbtn:focus {
+    background-color: #2980b9;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 70px;
+    overflow: auto;
+    border-radius: 12px;
+    font-size: 14px;
+    padding: 8px;
+    width: 1px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 4px 8px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown a:hover {
+    background-color: #ddd;
+  }
+  .show {
+    display: block;
+  }
+  #project-grid {
+    display: flex;
+    gap: 30px;
+  }
+  #project-grid p {
+    width: 45vw;
+    align-items: center;
+    padding: 0;
+  }
+  .introductie {
+    width: 390px;
+  }
+  .write {
+    white-space: normal;
+    min-width: 410px;
+  }
+  #namaken {
+    width: 67vw;
+  }
+  .pinkgoosehoofd{
+    display: flex;
+    flex-direction: column;
+  }
+  #pinkwebsite{
+    width: 60vw;
+    margin-top: 30px;
+  }
+  .pinkwebsite2{
+    display: block;
+  }
+  .pinkwebsite1{
+    display: none;
+  }
+  
+  
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
