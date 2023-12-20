@@ -30,19 +30,22 @@ p {
   font-weight: 500;
 }
 
+
 /* Algemeen */
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 60px;
+  height: auto;
   border-bottom: 10px solid #00b7db;
 }
 
 .dante {
-  padding: 20px 0px 0px 20px;
+  padding: 20px 0px 16px 20px;
   color: #62f6ff;
+  font-size: 20 px;
+  white-space: nowrap;
 }
 nav {
   display: flex;
@@ -57,7 +60,7 @@ nav .dropdown {
 }
 li {
   display: flex;
-  gap: 125px;
+  gap: 4vw;
   color: white;
 }
 li ul {
@@ -86,7 +89,6 @@ main {
   animation-fill-mode: both; /* Behoudt de animatiestaat na voltooiing */
   border-right: 2px solid transparent; /* Voegt een knipperende cursor toe */
   overflow-wrap: break-word;
-
 }
 
 .write:nth-child(1) {
@@ -94,7 +96,19 @@ main {
 }
 
 .write:nth-child(2) {
-  animation-delay: 2s; /* Vertraging voor de tweede paragraaf */
+  animation-delay: 0.2s; /* Vertraging voor de tweede paragraaf */
+}
+.write:nth-child(3) {
+  animation-delay: 0.5s; /* Vertraging voor de derde paragraaf */
+}
+.write:nth-child(4) {
+  animation-delay: 0.6s; /* Vertraging voor de vierde paragraaf */
+}
+.write:nth-child(5) {
+  animation-delay: 0.8s; /* Vertraging voor de vijfde paragraaf */
+}
+.write:nth-child(6  ) {
+  animation-delay: 1s; /* Vertraging voor de zesde paragraaf */
 }
 
 .projecten {
@@ -102,7 +116,6 @@ main {
   display: flex;
   padding-top: 30px;
   gap: 45px;
-  padding-bottom: 20vh;
 }
 .projecten div:hover {
   transform: scale(1.2);
@@ -120,12 +133,19 @@ main {
   justify-content: center;
 }
 
+.overmij{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 #persoon {
   display: flex;
   justify-content: center;
 }
 #persoon img {
-  width: 30%;
+  width: 15vw;
   border-radius: 100%;
 }
 .introductie {
@@ -135,7 +155,7 @@ main {
   border-radius: 10px;
   background-color: #005161;
   overflow-wrap: break-word;
-  width: 100%;
+  width: 50vw;
 }
 #goose {
   border-radius: 10px;
@@ -249,30 +269,35 @@ footer {
   width: 30vw;
   border-radius: 15px;
   margin: 0 15px 0 15px;
-
 }
-
 
 /* mastermind style */
 
-.mastermindblok{
+.mastermindblok {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 200px);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.mastermindblok img {
+  width: 23vw;
 }
 
-#java{
+.java {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.mastermindtekst2{
+.mastermindtekst2 {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.eclipse{
-  grid-area: 3 / 3 / 4 / 4;}
+.eclipse {
+  grid-area: 3 / 3 / 4 / 4;
+}
 
 @media screen and (max-width: 600px) {
   li {
@@ -344,6 +369,16 @@ footer {
   .write {
     white-space: normal;
     min-width: 410px;
+    animation: fadeIn 0.5s ease-in-out forwards,
+               typing 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    /* Voeg de animaties opnieuw toe binnen de mediaquery */
+  }
+  .overmij{
+    align-items: center;
+    flex-direction: column;
+  }
+  #persoon img{
+    width: 40vw;
   }
   #tekstbox {
     width: 67vw;
