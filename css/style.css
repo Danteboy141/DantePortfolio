@@ -23,13 +23,20 @@ p {
   color: #62f6ff;
   font-size: 20px;
 }
+h1 {
+  font-size: 45px;
+  color: #62f6ff;
+}
+h2 {
+  color: #62f6ff;
+  font-size: 20px;
+}
 
 #blauw {
   color: #62f6ff;
   text-decoration: none;
   font-weight: 500;
 }
-
 
 /* Algemeen */
 
@@ -80,6 +87,44 @@ main {
   flex-direction: column;
 }
 
+/* Style van mijn landingpage */
+
+.landingpage {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+  padding-top: 96px;
+}
+
+.begin {
+  left: -65px;
+  position: relative;
+}
+#knopabout {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #00738a;
+  border: #00d4ff;
+  position: relative;
+  top: 15px;
+  left: 100px;
+  text-align: center;
+}
+#knopabout:hover {
+  background-color: #0190ad;
+  color: #003742;
+}
+#knopabout img {
+  width: 15px;
+  position: relative;
+}
+
+.landingpage #persoon img{
+  width: 18vw;
+}
+
+/*  */
 .write {
   overflow: hidden;
   animation: fadeIn 0.5s ease-in-out forwards,
@@ -107,7 +152,7 @@ main {
 .write:nth-child(5) {
   animation-delay: 0.8s; /* Vertraging voor de vijfde paragraaf */
 }
-.write:nth-child(6  ) {
+.write:nth-child(6) {
   animation-delay: 1s; /* Vertraging voor de zesde paragraaf */
 }
 
@@ -133,7 +178,7 @@ main {
   justify-content: center;
 }
 
-.overmij{
+.overmij {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -156,7 +201,9 @@ main {
   background-color: #005161;
   overflow-wrap: break-word;
   width: 50vw;
+  white-space: wrap;
 }
+
 #goose {
   border-radius: 10px;
   align-self: center;
@@ -370,14 +417,14 @@ footer {
     white-space: normal;
     min-width: 410px;
     animation: fadeIn 0.5s ease-in-out forwards,
-               typing 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+      typing 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
     /* Voeg de animaties opnieuw toe binnen de mediaquery */
   }
-  .overmij{
+  .overmij {
     align-items: center;
     flex-direction: column;
   }
-  #persoon img{
+  #persoon img {
     width: 40vw;
   }
   #tekstbox {
@@ -407,6 +454,7 @@ footer {
     align-items: center;
   }
 }
+
 @keyframes typing {
   from {
     width: 0;
