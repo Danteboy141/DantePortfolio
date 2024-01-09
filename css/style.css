@@ -121,7 +121,7 @@ main {
 }
 
 .landingpage #persoon img {
-  width: 18vw;
+  width: 210px;
 }
 
 /*  */
@@ -530,6 +530,25 @@ footer {
   .contact form input{
     width: 152px;
     right: -1px;
+  }
+  .landingpage{
+    flex-direction: column;
+    width: auto;
+  }
+  .begin{
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #knopabout{
+    left: 0;
+  }
+  #persoon{
+    padding-top: 50px;
+  }
+  .landingpage #persoon img{
+    width: 34vw;
   }
 }
 
