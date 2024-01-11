@@ -51,7 +51,7 @@ header {
 .dante {
   padding: 20px 0px 16px 20px;
   color: #62f6ff;
-  font-size: 20 px;
+  font-size: 20px;
   white-space: nowrap;
 }
 nav {
@@ -319,6 +319,7 @@ main {
 footer {
   height: 100px;
   border-top: 10px solid #00b2ff;
+  margin-top: 9vw;
 }
 .social {
   display: flex;
@@ -480,13 +481,10 @@ footer {
   }
   .introductie {
     width: 390px;
+    height: 336px;
   }
   .write {
     white-space: normal;
-    min-width: 410px;
-    animation: fadeIn 0.5s ease-in-out forwards,
-      typing 4s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-    /* Voeg de animaties opnieuw toe binnen de mediaquery */
   }
   .overmij {
     align-items: center;
