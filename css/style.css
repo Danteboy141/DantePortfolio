@@ -24,12 +24,12 @@ p {
   font-size: 20px;
 }
 h1 {
-  font-size: 45px;
+  font-size: 60px;
   color: #62f6ff;
 }
 h2 {
   color: #62f6ff;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 #blauw {
@@ -109,7 +109,7 @@ main {
   position: relative;
 }
 #knopabout {
-  padding: 15px;
+  padding: 24px;
   border-radius: 15px;
   background-color: #00738a;
   border: #00d4ff;
@@ -126,9 +126,12 @@ main {
   width: 15px;
   position: relative;
 }
+#knopabout a{
+  font-size: 20px;
+}
 
 .landingpage #persoon img {
-  width: 210px;
+  width: 319px;
 }
 
 /*  */
@@ -325,7 +328,7 @@ main {
 footer {
   height: 100px;
   border-top: 10px solid #00b2ff;
-  margin-top: 9vw;
+  margin-top: 5vw;
 }
 .social {
   display: flex;
