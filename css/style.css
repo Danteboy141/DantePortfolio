@@ -86,6 +86,13 @@ main {
   padding: 70px 0 30px 0;
   flex-direction: column;
 }
+.logo-naam {
+  display: flex;
+  flex-direction: row;
+}
+#dglogo {
+  width: 85px; /*Geeft de groote van de logo plaatje aan */
+}
 
 /* Style van mijn landingpage */
 
@@ -128,7 +135,7 @@ main {
 
 /*  */
 
-.btn-box{
+.btn-box {
   position: relative;
   display: flex;
   justify-content: center;
@@ -137,7 +144,7 @@ main {
   padding-top: 15px;
 }
 
-.btn-box .btn{
+.btn-box .btn {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -158,7 +165,7 @@ main {
   text-align: center;
 }
 
-.contact input{
+.contact input {
   position: relative;
   background: transparent;
   padding: 15px 15px 15px 0;
@@ -182,14 +189,14 @@ main {
 }
 
 .contact form .input-box .input-field,
-.contact form .textarea-field textarea{
+.contact form .textarea-field textarea {
   width: 97%;
-  padding: .5rem;
+  padding: 0.5rem;
   font-size: 1.6rem;
   color: #00d4ff;
   background: transparent;
-  border-radius: .6rem;
-  border: .2rem solid #00b7db;
+  border-radius: 0.6rem;
+  border: 0.2rem solid #00b7db;
 }
 
 /*  */
@@ -207,7 +214,6 @@ main {
 .write:nth-child(1) {
   animation-delay: 0s;
 }
-
 .write:nth-child(2) {
   animation-delay: 0.2s; /* Vertraging voor de tweede paragraaf */
 }
@@ -258,7 +264,7 @@ main {
   justify-content: center;
 }
 #persoon img {
-  width: 15vw;
+  width: 200px;
   border-radius: 100%;
 }
 .introductie {
@@ -480,6 +486,7 @@ footer {
     padding: 0;
   }
   .introductie {
+    overflow: hidden;
     width: 390px;
     height: 336px;
   }
@@ -519,33 +526,33 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  .contact form{
+  .contact form {
     width: 410px;
   }
-  .contact form .input-box{
+  .contact form .input-box {
     width: 175px;
   }
-  .contact form input{
+  .contact form input {
     width: 152px;
     right: -1px;
   }
-  .landingpage{
+  .landingpage {
     flex-direction: column;
     width: auto;
   }
-  .begin{
+  .begin {
     left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #knopabout{
+  #knopabout {
     left: 0;
   }
-  #persoon{
+  #persoon {
     padding-top: 50px;
   }
-  .landingpage #persoon img{
+  .landingpage #persoon img {
     width: 34vw;
   }
 }
