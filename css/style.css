@@ -126,7 +126,7 @@ main {
   width: 15px;
   position: relative;
 }
-#knopabout a{
+#knopabout a {
   font-size: 20px;
 }
 
@@ -212,7 +212,6 @@ main {
   animation-fill-mode: both; /* Behoudt de animatiestaat na voltooiing */
   border-right: 2px solid transparent; /* Voegt een knipperende cursor toe */
   overflow-wrap: break-word;
-  
 }
 
 .write:nth-child(1) {
@@ -425,31 +424,49 @@ footer {
   grid-area: 3 / 3 / 4 / 4;
 }
 
-
-.welkom{
+.welkom {
   padding-bottom: 80px;
 }
 
-.mijn-cv{
+.mijn-cv {
   display: flex;
-  gap: 700px;
+  gap: 400px;
+  position: relative;
+  left: 132px;
 }
-.mijn-cv li:hover{
-  background-color: none;
-  border-radius: none;
+.mijn-vaardigheden li,
+.pc-vaardigheden li {
+  color: #62f6ff;
+  padding-top: 8px;
 }
-.vaardigheden div{
+.mijn-vaardigheden ul,
+.pc-vaardigheden ul {
+  position: relative;
+  left: 30px;
+}
+
+.vaardigheden div,
+.mijn-ervaring div {
   padding-bottom: 80px;
 }
-.vaardigheden h2{
+.vaardigheden h2,
+.mijn-ervaring h2 {
   font-size: 30px;
   position: relative;
   right: 30px;
 }
-.vaardigheden p{
+.vaardigheden p,
+.mijn-ervaring p {
   padding-top: 10px;
 }
+#tekst-dikgedrukt {
+  text-decoration: none;
+  font-weight: 700;
+}
 
+.profiel {
+  width: 500px;
+}
 
 @media screen and (max-width: 600px) {
   li {
