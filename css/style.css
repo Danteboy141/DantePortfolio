@@ -65,16 +65,16 @@ nav {
 nav .dropdown {
   display: none;
 }
-li {
+nav li {
   display: flex;
   gap: 4vw;
   color: white;
 }
-li ul {
+nav li ul {
   padding: 10px 10px 10px 10px;
   color: white;
 }
-ul:hover {
+nav ul:hover {
   background-color: grey;
   border-radius: 10px;
 }
@@ -433,6 +433,21 @@ footer {
 .mijn-cv{
   display: flex;
   gap: 700px;
+}
+.mijn-cv li:hover{
+  background-color: none;
+  border-radius: none;
+}
+.vaardigheden div{
+  padding-bottom: 80px;
+}
+.vaardigheden h2{
+  font-size: 30px;
+  position: relative;
+  right: 30px;
+}
+.vaardigheden p{
+  padding-top: 10px;
 }
 
 
