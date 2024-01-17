@@ -475,7 +475,7 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  li {
+  nav ul {
     display: none;
   }
   .projecten {
@@ -607,6 +607,29 @@ footer {
   }
   .landingpage #persoon img {
     width: 34vw;
+  }
+  .mijn-cv{
+    gap: 20px;
+  }
+  .welkom h1{
+    font-size: 46px;
+  }
+  .vaardigheden h2,
+  .mijn-ervaring h2{
+    font-size: 15px;
+  }
+  .vaardigheden p,
+  .mijn-vaardigheden ul,
+  .mijn-ervaring p,
+  .ervaring li,
+  .pc-vaardigheden li{
+    font-size: 12px;
+  }
+  .profiel{
+    width: 125px;
+  }
+  .mijn-cv{
+    left: 5px;
   }
 }
 
