@@ -212,6 +212,7 @@ main {
   animation-fill-mode: both; /* Behoudt de animatiestaat na voltooiing */
   border-right: 2px solid transparent; /* Voegt een knipperende cursor toe */
   overflow-wrap: break-word;
+  
 }
 
 .write:nth-child(1) {
@@ -256,7 +257,7 @@ main {
 }
 
 .overmij {
-  width: 100%;
+  width: 60%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -277,7 +278,7 @@ main {
   border-radius: 10px;
   background-color: #005161;
   overflow-wrap: break-word;
-  width: 50vw;
+  width: 772px;
   white-space: wrap;
 }
 
@@ -424,6 +425,17 @@ footer {
   grid-area: 3 / 3 / 4 / 4;
 }
 
+
+.welkom{
+  padding-bottom: 80px;
+}
+
+.mijn-cv{
+  display: flex;
+  gap: 700px;
+}
+
+
 @media screen and (max-width: 600px) {
   li {
     display: none;
@@ -491,7 +503,7 @@ footer {
   .introductie {
     overflow: hidden;
     width: 390px;
-    height: 336px;
+    height: 346px;
   }
   .write {
     white-space: normal;
