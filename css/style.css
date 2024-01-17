@@ -435,7 +435,8 @@ footer {
   left: 132px;
 }
 .mijn-vaardigheden li,
-.pc-vaardigheden li {
+.pc-vaardigheden li,
+.ervaring li {
   color: #62f6ff;
   padding-top: 8px;
 }
@@ -466,6 +467,11 @@ footer {
 
 .profiel {
   width: 500px;
+}
+
+.ervaring ul{
+  position: relative;
+  left: 20px;
 }
 
 @media screen and (max-width: 600px) {
