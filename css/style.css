@@ -589,10 +589,13 @@ footer {
     width: 152px;
     right: -1px;
   }
-  .landingpage {
-    flex-direction: column;
-    width: auto;
+  .landingpage h1{
+    font-size: 25px;
   }
+  .landingpage h2 {
+    font-size: 15px;
+  }
+
   .begin {
     left: 0;
     display: flex;
@@ -601,6 +604,10 @@ footer {
   }
   #knopabout {
     left: 0;
+    padding: 15px;
+  }
+  #knopabout a{
+    font-size: 9px;
   }
   #persoon {
     padding-top: 50px;
