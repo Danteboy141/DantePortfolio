@@ -332,13 +332,27 @@ footer {
 }
 .social {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   gap: 15px;
-  margin-top: 30px;
-  margin-right: 50px;
+  position: relative;
+  top: 44px;
 }
 .social img {
   width: 38px;
+}
+#sociallogo{
+  width: 100px;
+  position: relative;
+  bottom: 19px;
+}
+
+.contact-mij{
+  position: relative;
+  left: 40px ;
+  bottom: 26px;
+}
+.contact-mij h2{
+  padding-bottom: 5px;
 }
 
 /* Pinkgoose pagina */
