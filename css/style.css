@@ -65,16 +65,17 @@ nav {
 nav .dropdown {
   display: none;
 }
-nav li {
+nav ul {
   display: flex;
   gap: 4vw;
   color: white;
+  list-style-type: none;
 }
-nav li ul {
+nav ul li {
   padding: 10px 10px 10px 10px;
   color: white;
 }
-nav ul:hover {
+nav li:hover {
   background-color: grey;
   border-radius: 10px;
 }
@@ -83,7 +84,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 0 30px 0;
+  padding: 70px 0 0 0;
   flex-direction: column;
 }
 .logo-naam {
@@ -100,8 +101,6 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 100px;
-  padding-top: 96px;
 }
 
 .begin {
@@ -137,6 +136,18 @@ main {
 /*  */
 
 /*  */
+.verkooppraat{
+  width: 300px;
+}
+.verkooppraat h3{
+  color: #62f6ff;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 .btn-box {
   position: relative;
@@ -265,9 +276,12 @@ main {
 #persoon {
   display: flex;
   justify-content: center;
+  position: relative;
+  top: 25px;
+  right: 25px;
 }
 #persoon img {
-  width: 200px;
+  width: 198px;
   border-radius: 100%;
 }
 .introductie {
