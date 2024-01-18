@@ -498,7 +498,7 @@ footer {
 .mijn-ervaring p {
   padding-top: 10px;
 }
-#tekst-dikgedrukt {
+.tekst-dikgedrukt {
   text-decoration: none;
   font-weight: 700;
 }
