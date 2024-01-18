@@ -428,7 +428,7 @@ footer {
   align-items: center;
 }
 
-#team {
+.team {
   width: 30vw;
   border-radius: 15px;
   margin: 0 15px 0 15px;
@@ -609,7 +609,7 @@ footer {
     display: none;
   }
 
-  #team {
+  .team {
     width: 67vw;
   }
   .projectweekblok {
