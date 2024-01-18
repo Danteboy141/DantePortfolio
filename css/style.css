@@ -354,6 +354,9 @@ footer {
 .contact-mij h2{
   padding-bottom: 5px;
 }
+.contact-mij p{
+  padding-bottom: 3px;
+}
 
 /* Pinkgoose pagina */
 .pinkgoosehoofd {
@@ -621,7 +624,7 @@ footer {
     padding: 15px;
   }
   #knopabout a{
-    font-size: 9px;
+    font-size: 14px;
   }
   #persoon {
     padding-top: 50px;
@@ -651,6 +654,22 @@ footer {
   }
   .mijn-cv{
     left: 5px;
+  }
+  .social img{
+    width: 24px;
+  }
+  #sociallogo{
+    width: 52px;
+    bottom: 7px;
+  }
+  .contact-mij h2{
+    font-size: 22px;
+  }
+  .contact-mij p{
+    font-size: 14px;
+  }
+  .contact-mij{
+    left: 16px;
   }
 }
 
