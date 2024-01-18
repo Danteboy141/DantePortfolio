@@ -333,17 +333,28 @@ footer {
 .social {
   display: flex;
   justify-content: center;
-  gap: 15px;
   position: relative;
   top: 44px;
+}
+#pijl{
+  font-size: 50px;
+  font-weight: 700;
+  position: relative;
+  right: 424px;
+  cursor: pointer;
 }
 .social img {
   width: 38px;
 }
-
+.socialicon{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  position: relative;
+  left: 477px;
+}
 .contact-mij{
   position: relative;
-  left: 40px ;
   bottom: 26px;
 }
 .contact-mij h2{
