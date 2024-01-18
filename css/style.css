@@ -340,11 +340,6 @@ footer {
 .social img {
   width: 38px;
 }
-#sociallogo{
-  width: 100px;
-  position: relative;
-  bottom: 19px;
-}
 
 .contact-mij{
   position: relative;
@@ -634,33 +629,40 @@ footer {
   }
   .mijn-cv{
     gap: 20px;
+    left: 45px;
+
   }
   .welkom h1{
     font-size: 46px;
   }
   .vaardigheden h2,
   .mijn-ervaring h2{
-    font-size: 15px;
+    font-size: 30px;
   }
   .vaardigheden p,
   .mijn-vaardigheden ul,
   .mijn-ervaring p,
   .ervaring li,
   .pc-vaardigheden li{
-    font-size: 12px;
+    font-size: 15px;
+  }
+  .mijn-ervaring h2{
+    right: 61px;
+  }
+  .mcdonalds,
+  .dominos{
+    position: relative;
+    right: 38px;
   }
   .profiel{
-    width: 125px;
+    width: 173px;
   }
-  .mijn-cv{
-    left: 5px;
+  .profiel p{
+    position: relative;
+    right: 38px;
   }
   .social img{
     width: 24px;
-  }
-  #sociallogo{
-    width: 52px;
-    bottom: 7px;
   }
   .contact-mij h2{
     font-size: 22px;
