@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
       rel="stylesheet" />
     <script src="js/java.js"></script>
+    <!---->
   </head>
 
   <body>
@@ -35,6 +36,8 @@
             <a href="cv.html">CV</a>
           </li>
         </ul>
+        <!-- Hier wordt een dropdown menu aangemaakt
+           en deze is specifiek voor de responsive kant -->
         <div class="dropdown">
           <button onclick="myFunction()" class="dropbtn">Menu</button>
           <div id="myDropdown" class="dropdown-content">
@@ -47,11 +50,15 @@
         </div>
       </nav>
     </header>
+
+    <!-- Hier begint de inhoud van de website -->
     <main>
       <section class="overmij">
+        <!-- Foto van mijzelf toegevoegd -->
         <div id="persoon">
           <img src="img/dante.jpeg" alt="persoonfoto" />
         </div>
+        <!-- Hier staat inhoudelijk informatie over mij -->
         <div class="introductie">
           <p class="write">
             Welkom op mijn portfolio. Mijn naam is Danté van de Weerd en ik ben
@@ -74,6 +81,7 @@
             om zo beter te zijn
           </p>
           <p class="write">
+            <!-- Span is hier gebruikt om een underline toe te voegen -->
             <span
               >Tip: Je kan ook op de foto's hieronder klikken om te zien wat ik
               heb gemaakt</span
@@ -81,6 +89,7 @@
           </p>
         </div>
       </section>
+      <!-- Hier staat de projecten in foto's -->
       <section class="projecten">
         <div id="goose">
           <a href="product.html"
@@ -97,9 +106,12 @@
         </div>
       </section>
     </main>
+    <!-- Het begin van de footer -->
     <footer>
       <section class="social">
+        <!-- Hier is een pijl aangemaakt om helemaal naar de bovenkant van de pagina -->
         <p id="pijl" onclick="scrollToTop()">&#8593;</p>
+        
         <div class="contact-mij">
           <h2>Contact</h2>
           <p>1206565@student.roc-nijmegen.nl</p>
