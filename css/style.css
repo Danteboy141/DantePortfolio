@@ -1,6 +1,7 @@
 /* Algemeen */
 
 * {
+  /* Hier wordt alle style toegepast aan heel de website */
   margin: 0px;
   padding: 0px;
   text-decoration: none;
@@ -9,6 +10,7 @@
 
 body {
   background-color: #00323b;
+  /* Hier krijg de body van iedere pagina een lettertype */
   font-family: "Hedvig Letters Serif", serif;
 }
 
@@ -16,18 +18,22 @@ a {
   color: #62f6ff;
 }
 span {
+  /* Iedere span krijgt een dikte van 700 en een underline */
   font-weight: 700;
   text-decoration: underline;
 }
 p {
+  /* Hier krijgt iedere p een kleur en een letter grootte */
   color: #62f6ff;
   font-size: 20px;
 }
 h1 {
+  /* Hier krijgt iedere h1 een kleur en een letter grootte */
   font-size: 60px;
   color: #62f6ff;
 }
 h2 {
+  /* Hier krijgt iedere h2 een kleur en een letter grootte */
   color: #62f6ff;
   font-size: 24px;
 }
@@ -84,8 +90,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 70px 0 0 0;
   flex-direction: column;
+  position: relative;
+  top: 60px;
 }
 .logo-naam {
   display: flex;
@@ -136,18 +143,17 @@ main {
 /*  */
 
 /*  */
-.verkooppraat{
+.verkooppraat {
   width: 300px;
 }
-.verkooppraat h3{
+.verkooppraat h3 {
   color: #62f6ff;
 }
-.contact{
+.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 .btn-box {
   position: relative;
@@ -342,7 +348,8 @@ main {
 footer {
   height: 100px;
   border-top: 10px solid #00b2ff;
-  margin-top: 5vw;
+  position: relative;
+  top: 125px;
 }
 .social {
   display: flex;
@@ -350,7 +357,7 @@ footer {
   position: relative;
   top: 44px;
 }
-#pijl{
+#pijl {
   font-size: 50px;
   font-weight: 700;
   position: relative;
@@ -360,21 +367,21 @@ footer {
 .social img {
   width: 38px;
 }
-.socialicon{
+.socialicon {
   display: flex;
   flex-direction: row;
   gap: 15px;
   position: relative;
   left: 477px;
 }
-.contact-mij{
+.contact-mij {
   position: relative;
   bottom: 26px;
 }
-.contact-mij h2{
+.contact-mij h2 {
   padding-bottom: 5px;
 }
-.contact-mij p{
+.contact-mij p {
   padding-bottom: 3px;
 }
 
@@ -506,7 +513,7 @@ footer {
   width: 500px;
 }
 
-.ervaring ul{
+.ervaring ul {
   position: relative;
   left: 20px;
 }
@@ -626,7 +633,7 @@ footer {
     width: 152px;
     right: -1px;
   }
-  .landingpage h1{
+  .landingpage h1 {
     font-size: 25px;
   }
   .landingpage h2 {
@@ -643,7 +650,7 @@ footer {
     left: 0;
     padding: 15px;
   }
-  #knopabout a{
+  #knopabout a {
     font-size: 14px;
   }
   #persoon {
@@ -652,50 +659,49 @@ footer {
   .landingpage #persoon img {
     width: 34vw;
   }
-  .mijn-cv{
+  .mijn-cv {
     gap: 20px;
     left: 45px;
-
   }
-  .welkom h1{
+  .welkom h1 {
     font-size: 46px;
   }
   .vaardigheden h2,
-  .mijn-ervaring h2{
+  .mijn-ervaring h2 {
     font-size: 30px;
   }
   .vaardigheden p,
   .mijn-vaardigheden ul,
   .mijn-ervaring p,
   .ervaring li,
-  .pc-vaardigheden li{
+  .pc-vaardigheden li {
     font-size: 15px;
   }
-  .mijn-ervaring h2{
+  .mijn-ervaring h2 {
     right: 61px;
   }
   .mcdonalds,
-  .dominos{
+  .dominos {
     position: relative;
     right: 38px;
   }
-  .profiel{
+  .profiel {
     width: 173px;
   }
-  .profiel p{
+  .profiel p {
     position: relative;
     right: 38px;
   }
-  .social img{
+  .social img {
     width: 24px;
   }
-  .contact-mij h2{
+  .contact-mij h2 {
     font-size: 22px;
   }
-  .contact-mij p{
+  .contact-mij p {
     font-size: 14px;
   }
-  .contact-mij{
+  .contact-mij {
     left: 16px;
   }
 }
