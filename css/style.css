@@ -480,12 +480,16 @@ footer {
 }
 .mijn-vaardigheden li,
 .pc-vaardigheden li,
-.ervaring li {
+.ervaring li,
+.intresses li,
+.mijn-info li {
   color: #62f6ff;
   padding-top: 8px;
 }
 .mijn-vaardigheden ul,
-.pc-vaardigheden ul {
+.pc-vaardigheden ul,
+.intresses ul,
+.mijn-info ul {
   position: relative;
   left: 30px;
 }
@@ -511,6 +515,10 @@ footer {
 
 .profiel {
   width: 500px;
+}
+#profiel-dante{
+  border-radius: 100px;
+  width: 230px;
 }
 
 .ervaring ul {
